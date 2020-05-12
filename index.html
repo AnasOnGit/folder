@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>folder</title>
+</head>
+<body>
+    <div class="folders" >
+        <a class="ff-design" href="igcse" data-title="anas"></a>
+        <a class="ff-design" href="igcse" data-title="Bab" data-img="folder.png"></a>
+    </div>
+    
+    <script>
+        // getting folder
+        const folder = document.querySelector(".ff-design");
+        // image path
+        const imgPath = "https://img.icons8.com/cotton/64/000000/folder-invoices--v1.png";
+
+        // creating img icons
+        const folderIcon = document.createElement("img");
+        
+        if(folder.getAttribute("data-img") != "")
+        {
+            folderIcon.setAttribute("src",imgPath);
+        }
+        else{
+            const imgPathCustom = folder.getAttribute("data-img");
+            folderIcon.setAttribute("src",imgPathCustom);
+        }
+        
+        // getting title from data-title attribute  
+        const title = folder.getAttribute("data-title");
+        const fileName = document.createElement("span");
+        fileName.setAttribute("class","folder-span");
+        fileName.innerHTML = title;
+        console.log(fileName)
+
+        folder.appendChild(folderIcon)
+        folder.appendChild(fileName)
+        
+
+        
+    </script>
+</body>
+</html>

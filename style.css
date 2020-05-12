@@ -1,0 +1,114 @@
+/* folder css */
+
+.folders
+{
+	padding:7px;
+	width:100%;
+	display: grid;
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content:center;
+
+}
+
+.ff-design
+{
+	background-color:#ffffffbd;
+	border:1px solid #d8d2d2;
+	box-shadow:-0px 2px 3px 1px #827e7e;
+	padding:5px;
+	width:170px;
+	height:170px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	border-radius:2px;
+	cursor:pointer;
+	margin-left:15px;
+	position:relative;
+	margin-bottom:35px;
+	color:#000;
+	text-decoration: none;
+}
+
+.add-new
+{
+	justify-content: center;
+}
+
+.ff-design:hover
+{
+	width:180px;
+}
+.folder-button
+{
+	background-color:#fff;
+	outline:none;
+	border:none;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+
+}
+
+.delete-folder
+{
+	width:100%;
+	padding:2px;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	pointer-events:none;
+	opacity:0;
+	transition:all .5s ease-in;
+}
+
+.show-delete-button
+{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.delete-folder img
+{
+	width:30px;
+}
+@media screen and (min-width: 458px) {
+	/* folder css */
+	.folders
+	{
+	  display: grid;
+	  align-content: center;
+	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	  justify-items:center;
+	  width:100%;
+
+	}
+
+	.ff-design
+	{
+		background-color:#ffffffbd;
+		border:1px solid #d8d2d2;
+		box-shadow:-0px 2px 3px 1px #827e7e;
+		padding:5px;
+		width:170px;
+		height:170px;
+		display:flex;
+		flex-direction:column;
+		/*justify-content:center;*/
+		align-items:center;
+		border-radius:2px;
+		cursor:pointer;
+		margin-left:15px;
+	}
+
+	.ff-design:hover
+	{
+/* 		width:175px;
+		height:175px; */
+	}
+
+}
